@@ -24,11 +24,9 @@
 <body>
 
     <header class="header-area">
-        <nav>
-            <div>
-                <h2><a class="logo-first" href="index.html">Web
-                        <span class="logo-second">Studio</span></a></h2>
-            </div>
+            <div class="container site-bar">
+                <a class="logo-first" href="index.html">Web
+                        <span class="logo-second">Studio</span></a>
             <nav>
                 <ul class="main-contact">
                     <li><a class="links" href="/Agencja">Agencja</a></li>
@@ -36,24 +34,27 @@
                     <li><a class="links" href="/Kontakt">Kontakt</a></li>
                 </ul>
             </nav>
-            <ul class="main-nav-contact">
+            <ul class=" main-contact main-nav">
                 <li><a class="links" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a class="links" href="tel:+48111111111">+ 48 111 111 111</a></li>
             </ul>
-        </header>
+        </div>
     </header>
 
+
     <main>
-        <section class="first-main-page">
+        <section class="first-main-page section">
+            <div class="container">
         <h1 class="first-main-page-caption">
             EFEKTYWNE ROZWIAZANIA<br />DLA WASZEGO BIZNESU
         </h1>
         <button type="button" class="first-main-page-button">
             Zamów usługę
         </button>
+            </div>
         </section>
 
-        <section class="second-main-page">
+        <section class="second-main-page section container">
                 <ul class="second-main-page-list">
                     <li>
                     <h3> Lorem, ipsum.</h3>
@@ -94,7 +95,7 @@
         </section>
 
 
-        <section class="third-main-page">
+        <section class="third-main-page section container">
                 <h2 class="third-main-page-caption">Czym się zajmujemy</h2>
                 <ul>
                      <li>
@@ -122,7 +123,8 @@
         </section>
 
 
-        <section class="team">
+        <section class="team-section">
+            <div class="container">
             <h2 class="team-caption"> Nasz zespół </h2>
             <ul>
                 <li>
@@ -133,7 +135,8 @@
                         width="270"
                         height="368">
                         <figcaption>
-                            John Doe <br /><span>Product Designer</span>
+                            <h4 class="team-name">John Doe</h4> 
+                            <p class="team-name-job">Product Design</p>
                         </figcaption>
                     </figure>
                 </li>
@@ -145,8 +148,10 @@
                         width="270"
                         height="368">
                     <figcaption>
-                        John Doe <br /><span>Frontend Developer</span>
+                        <h4 class="team-name">John Doe</h4> 
+                        <p class="team-name-job">Frontend Developer</p>
                     </figcaption>
+                        </figure>
                     </li>
                     <li>
                         <figure class="team-worker">
@@ -155,7 +160,10 @@
                         alt="John3"
                         width="270"
                         height="368">
-                        <figcaption>John Doe<br /><span>Marketing</span></figcaption>
+                        <figcaption>
+                            <h4 class="team-name">John Doe</h4>
+                            <p class="team-name-job">Marketing</p>
+                        </figcaption>
                         </figure>
                     </li>
 
@@ -166,14 +174,19 @@
                         alt="UI"
                         width="270"
                         height="368">
-                        <figcaption>John Doe<br /><span>UI Designer</span></figcaption>
+                        <figcaption>
+                            <h4 class="team-name">John Doe</h4>
+                            <p class="team-name-job">UI Designer</p>
+                        </figcaption>
                         </figure>
                     </li>
                 </ul>
+            </div>
             </section>
         </main>
 
         <footer class="footer-logo">
+            <div class="container">
             <a class= "logo-first" href="index.html"
             >Web<span class="logo-second-footer">Studio</span></a>
             
@@ -185,6 +198,7 @@
                 <a href="tel:+48111111111" class="adress-tel">
                     +48 111 111 111</a>
             </address>
+            </div>
         </footer>
       </body>
     </html>

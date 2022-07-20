@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" /> 
@@ -18,10 +23,9 @@
 <body>
 
     <header class="header-area">
-            <div>
-                <h2><a class="logo-first" href="index.html">Web
-                    <span class="logo-second">Studio</span></a></h2>
-            </div>
+            <div class="container site-bar">
+                <a class="logo-first" href="index.html">Web
+                    <span class="logo-second">Studio</span></a>
                 <nav>
                     <ul class="main-contact">
                      <li><a class="links" href="/Agencja">Agencja</a></li>
@@ -29,24 +33,23 @@
                      <li><a class="links" href="/Kontakt">Kontakt</a></li>
                     </ul>
                 </nav>
-                <ul class="main-nav-contact">
+                <ul class="main-contact main-nav">
                     <li><a class="links" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="links" href="tel:+48111111111">+ 48 111 111 111</a></li>
                 </ul>
+            </div>
         </header>
     
     <main>
-        <nav>
-            <div class="filtr-buttons-portfolio">
+        <div class="all-buttons container section">
+            <div class="all-buttons-nav">
                 <button type="button" class="filtr-button"> Wszystkie </button>
                 <button type="button" class="filtr-button"> Strony </button>
                 <button type="button" class="filtr-button"> Aplikacje </button>
                 <button type="button" class="filtr-button"> Dizajn </button>
                 <button type="button" class="filtr-button"> Marketing </button>
             </div>
-        </nav>
 
-    <section>
             <ul class="projects-images">
                 <li>
                 <figure>
@@ -56,8 +59,8 @@
                     width="370"
                     height="294">
                     <figcaption>
-                        Technocrack <br />
-                        <span>Strona internetowa</span>
+                     <h4 class="project-title">Technocrack</h4> 
+                     <p class="project-type">Strona internetowa</p>
                     </figcaption>
                 </figure>
                 </li>
@@ -69,8 +72,9 @@
                     alt="neworlean"
                     width="370"
                     height="294">
-                    <figcaption>Grafika New Orlean vs Golden Star<br />
-                        <span>Dizajn</span>
+                    <figcaption>
+                       <h4 class="project-title">Grafika New Orlean vs Golden Star</h4>
+                        <p class="project-type">Dizajn</p>
                     </figcaption>
                     </figure>
                 </li>
@@ -82,8 +86,9 @@
                     alt="restauracja"
                     width="370"
                     height="294">
-                    <figcaption>Seafood<br />
-                        <span>Aplikacja</span>
+                    <figcaption>
+                     <h4 class="project-title">Seafood</h4>
+                      <p class="project-type">Aplikacja</p>
                     </figcaption>
                     </figure>
                 </li>
@@ -96,8 +101,9 @@
                     alt="projektprime"
                     width="370"
                     height="294">
-                    <figcaption>Prime <br />
-                        <span>Marketing</span>
+                    <figcaption>
+                    <h4 class="project-title">Prime</h4>
+                     <p class="project-type">Marketing</p>
                     </figcaption>
                     </figure>
                 </li>
@@ -110,8 +116,9 @@
                     alt="boxes"
                     width="370"
                     height="294">
-                    <figcaption>Projekt Boxes<br />
-                        <span>Aplikacja</span></figcaption>
+                    <figcaption>
+                    <h4 class="project-title">Projekt Boxes</h4>
+                     <p class="project-type">Aplikacja</p>
                     </figure>
                 </li>
 
@@ -123,8 +130,9 @@
                     alt="inspiration"
                     width="370"
                     height="294">
-                    <figcaption> Inspiration has no Borders<br />
-                        <span>Strona internetowa</span>
+                    <figcaption> 
+                    <h4 class="project-title">Inspiration has no Borders</h4>
+                    <p class= "project-type">Strona internetowa</p>
                     </figcaption>
                     </figure>
                 </li>
@@ -136,8 +144,10 @@
                     alt="magazyn"
                     width="370"
                     height="294">
-                    <figcaption>Limited Edition<br />
-                        <span>Dizajn</span></figcaption>
+                    <figcaption>
+                    <h4 class="project-title">Limited Edition</h4>
+                    <p class="project-type>">Dizajn</p>
+                    </figcaption>
                     </figure>
                 </li>
 
@@ -149,8 +159,10 @@
                     alt="projektlab"
                     width="370"
                     height="294">
-                    <figcaption>Projekt LAB<br />
-                        <span>Marketing</span></figcaption>
+                    <figcaption>
+                    <h4 class="project-title">Projekt LAB</h4>
+                     <p class="project-type">Marketing</p>
+                     </figcaption>
                     </figure>
                 </li>
 
@@ -162,16 +174,20 @@
                     alt="business"
                     width="370"
                     height="294">
-                    <figcaption>Growing Business<br /><span>Aplikacja</span>
+                    <figcaption>
+                    <h4 class="project-title">Growing Business</h4>
+                     <p class="project-title">Aplikacja</p>
                     </figcaption>
                     </figure>
                 </li>
             </ul>
-    </section>
+        </div>
     </main>
 
     <footer class="footer-logo">
-        <a class="logo-first" href="index.html">Web<span class="logo-second-footer">Studio</span></a>
+        <div class="container">
+        <a class="logo-first" href="index.html">
+        Web<span class="logo-second-footer">Studio</span></a>
     
         <address class="adress-info">
             m. Warszawa, Aleje Jerozolimskie 21 <br />
@@ -180,6 +196,7 @@
             <a href="tel:+48111111111" class="adress-tel">
                 +48 111 111 111</a>
         </address>
+        </div>
     </footer>
   </body>
 </html>

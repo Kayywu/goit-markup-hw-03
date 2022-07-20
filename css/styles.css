@@ -310,47 +310,73 @@ body {
 /* PORTFOLIO */
 
 
-.filtr-button {
+.all-buttons-nav {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.all-buttons-nav button {
     background-color: var(--background-light-color);
     color: var(--main-color);
     border: none;
     font-size: 16px;
     font-weight: 500;
     text-align: center;
-    vertical-align: top;   
+    line-height: 1.63;
+    vertical-align: top; 
+    padding: 6px 22px;
+    border-radius: 4px;
 }
 
-.filtr-button:hover {
+.all-buttons-nav button:hover {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.all-buttons-nav button:focus {
     background-color: var(--accent-color);
     color: var(--white-color);
     cursor: pointer;
 }
 
-.filtr-button:hover {
-    background-color: var(--accent-color);
-    color: var(--white-color);
-    cursor: pointer;
-}
 
 .projects-images {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 50px;
 }
 
 .projects-images figcaption {
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px soild #eeeeee;
+    border-left: 1px solid #eeeeee;
+}
+
+.project-title {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
     vertical-align: top;
-    letter-spacing: 0.8px;
+    letter-spacing: 1.5px;
+    padding-top: 20px;
+    padding-bottom: 4px;
+    padding-left: 24px;
 }
 
-.projects-images span {
-    font-size: 16px;
-    font-weight: 400;
+.project-type {
     color: var(--descriptions-color);
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    padding-bottom: 20px;
+    padding-left: 24px;
 }
-
-
 
 
 
